@@ -1,4 +1,4 @@
-def enkripsi(plaintext, key):
+def en(plaintext, key):
     encoded = []
 
     for i in range(len(plaintext)):
@@ -7,8 +7,8 @@ def enkripsi(plaintext, key):
 
     return ''.join(encoded)
 
-def dekripsi(chipertext, key):
-    return enkripsi(chipertext, key)
+def dek(chipertext, key):
+    return en(chipertext, key)
 
 def main():
     # fungsi enkripsi
@@ -16,13 +16,13 @@ def main():
     key = 'XYZ'
 
     print("Plaintext: ", plaintext)
-    print("Enkripsi: ", enkripsi(plaintext, key))
+    print("Enkripsi: ", en(plaintext, key))
 
     # fungsi dekripsi
     chipertext = str(input("Masukkan Chipertext: "))
     key = "XYZ"
 
     print("Chipertext: ", chipertext)
-    print("Dekripsi: ", dekripsi(chipertext, key))
+    print("Dekripsi: ", dek(chipertext, key))
 
 main()
