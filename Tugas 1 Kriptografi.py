@@ -12,14 +12,14 @@ def dekripsi(chipertext, key):
 
 def main():
     # fungsi enkripsi
-    plaintext = str(input("Masukkan plaintext: "))
+    plaintext = str(input("Masukkan Plaintext: "))
     key = 'XYZ'
 
     print("Plaintext: ", plaintext)
     print("Enkripsi: ", enkripsi(plaintext, key))
 
     # fungsi dekripsi
-    chipertext = str(input("Masukkan chipertext: "))
+    chipertext = str(input("Masukkan Chipertext: "))
     key = "XYZ"
 
     print("Chipertext: ", chipertext)
